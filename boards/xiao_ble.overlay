@@ -1,0 +1,14 @@
+&spi2 {
+    status = "okay";
+
+    epd_3in7: epd_3in7@0 {
+        compatible = "spi-device", "waveshare,epd_3in7";
+        reg = <0>;
+        spi-max-frequency = <8000000>;
+        frame-format = "motorola";
+        duplex = "full";
+
+        label = "EPD_3IN7";
+    };
+};
+
